@@ -1,4 +1,4 @@
-Raytracing in a Summer
+Ray Tracing in a Summer
 ==========================
 Ever since I discovered the power of raytracing as a pre-teen, hudled over my computer creating my first donught in Blender, I knew it would become one of my major interests. 
 
