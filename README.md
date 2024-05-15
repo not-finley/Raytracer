@@ -1,6 +1,6 @@
 Raytracer in a Summer
 ==========================
-Ever since I discovered the power of raytracing as a pre-teen, hudled over my computer creating my first donught in Blender I knew it would become one of my major interests. 
+Ever since I discovered the power of raytracing as a pre-teen, hudled over my computer creating my first donught in Blender, I knew it would become one of my major interests. 
 
 This summer I have tasked myself with finally learning the basics, and a little more, of programming ray tracing. My highschool math teacher and one of my main insperations Mr.Fryer-Davis introduced me to this series back in highschool, at that time I was afraid of C based languages so I lost my steam. 
 
