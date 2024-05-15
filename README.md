@@ -9,6 +9,11 @@ I see this as a good way to kill two birds with one stone.
 Huge credits to Peter Shirley's [_Ray Tracing in One Weekend_](https://raytracing.github.io/books/RayTracingInOneWeekend.html) 
 It is phenomenly writen and I highly suggest anyone interested in learning the basics of ray tracing check it out!
 
+### Current Goals: 
+- Add GPU support using CUDA
+- Add a GUI
+- Add capability for objects other than spheres 😂
+
 ### Results
 ![Normals](Images/Normals.png)
 ![Rasterize](Images/Rasterize.png)
