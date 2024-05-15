@@ -22,4 +22,5 @@ It is phenomenly writen and I highly suggest anyone interested in learning the b
 ![Scene A](Images/SceneA.png)
 ![Depth of Feild](Images/DOF.png)
 ![Scene B](Images/SceneB.png)
+![Motion Blur](Images/MotionBlur.png)
 
