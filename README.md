@@ -9,3 +9,10 @@ I see this as a good way to kill two birds with one stone.
 Huge credits to Peter Shirley's [_Ray Tracing in One Weekend_](https://raytracing.github.io/books/RayTracingInOneWeekend.html) 
 It is phenomenly writen and I highly suggest anyone interested in learning the basics of ray tracing check it out!
 
+### Results
+![Normals](Images/Normals.png)
+![Rasterize](Images/Rasterize.png)
+![Scene A](Images/SceneA.png)
+![Depth of Feild](Images/DOF.png)
+![Scene B](Images/SceneB.png)
+
