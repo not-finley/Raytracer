@@ -11,7 +11,7 @@ Huge credits to Peter Shirley's [_Ray Tracing in One Weekend_](https://raytracin
 It is phenomenly writen and I highly suggest anyone interested in learning the basics of ray tracing check it out!
 
 ### Current Goals: 
-- Add support for objects other than spheres 😂
+- Add support for objects other then spheres 😂
 - Add texture support
 - Add a GUI for moving objects and the camera around
 - Add GPU support using CUDA
