@@ -1,4 +1,4 @@
-Raytracer in Some Months
+Raytracer in A Summer
 ==========================
 Ever since I discovered the power of raytracing as a pre-teen, hudled over my computer creating my first donught in Blender I knew it would become one of my major interests. 
 
@@ -16,7 +16,7 @@ It is phenomenly writen and I highly suggest anyone interested in learning the b
 - Add a GUI for moving objects and the camera around
 - Add GPU support using CUDA
 
-### Results
+### Results:
 ![Normals](Images/Normals.png)
 ![Rasterize](Images/Rasterize.png)
 ![Scene A](Images/SceneA.png)
