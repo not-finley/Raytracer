@@ -13,8 +13,13 @@ class lambert : public material {
 public: 
     lambert(const vec3& a) : albedo(a) {}
     virtual bool scatter(const ray& r_in, const hit_record& rec, vec3& attenuation, ray& scattered) const {
-        vec3 target = rec.p + rec.normal + random_in_unit_sphere();
-        scattered = ray(rec.p, target-rec.p);
+        vec3 scatter_direction = rec.normal + random_in_unit_sphere();
+
+        // Catch degenerate scatter direction
+        if (scatter_direction.x() < 1e-8 && scatter_direction.y() < 1e-8 && scatter_direction.z() < 1e-8) {
+            scatter_direction = rec.normal;
+        }
+        scattered = ray(rec.p, scatter_direction, r_in.time());
         attenuation = albedo;
         return true;
     }
@@ -26,7 +31,7 @@ public:
     metal(const vec3& a, float r) : albedo(a) {if(r < 1) roughness = r; else roughness = 1; }
     virtual bool scatter(const ray& r_in, const hit_record& rec, vec3& attenuation, ray& scattered) const {
         vec3 reflected = reflect(unit_vector(r_in.direction()), rec.normal);
-        scattered = ray(rec.p, reflected + roughness * random_in_unit_sphere());
+        scattered = ray(rec.p, reflected + roughness * random_in_unit_sphere(), r_in.time());
         attenuation = albedo;
         return (dot(scattered.direction(), rec.normal) > 0);
     }  
@@ -62,9 +67,9 @@ public:
             reflect_prob = 1.0;
         }
         if (drand48() < reflect_prob) {
-            scattered = ray(rec.p, reflected);
+            scattered = ray(rec.p, reflected, r_in.time());
         } else {
-            scattered = ray(rec.p, refracted);
+            scattered = ray(rec.p, refracted, r_in.time());
         }
         return true;
     }  
