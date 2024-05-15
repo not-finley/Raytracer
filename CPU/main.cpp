@@ -56,7 +56,7 @@ int main() {
     int ns = 200;
     std::cout << "P3\n" << width << " " << height << "\n255\n";
     
-    //0.7,0.8,0.79
+   //Scene A:
     // hitable *list[4];
     // list[0] = new sphere(vec3(0,0,-1),0.5,new lambert(vec3(0.99,0.55,0.99)));
     // list[1] = new sphere(vec3(0,-100.5,-1),100,new lambert(vec3(0.45,0.4,0.3)));
@@ -64,16 +64,26 @@ int main() {
     // list[3] = new sphere(vec3(-1,0,-1),0.5,new dilectric(1.5));
     // hitable *world = new hitable_list(list, 4);
 
+    hitable *list[4];
+    list[0] = new sphere(vec3(0,0,-1),0.5,new lambert(vec3(0.99,0.55,0.99)));
+    list[1] = new sphere(vec3(0,-100.5,-1),100,new lambert(vec3(0.45,0.4,0.3)));
+    list[2] = new sphere(vec3(1,0,-1), vec3(1,0.4,-1),0.5, new metal(vec3(0.8,0.8,0.55),0.0));
+    list[3] = new sphere(vec3(-1,0,-1), vec3(-1,0.2,-1),0.5,new dilectric(1.5));
+    hitable *world = new hitable_list(list, 4);
+
+    //Scene C:
     // hitable *list[2];
     // float R = cos(M_PI/4);
     // list[0] = new sphere(vec3(-R,0,-3), R, new lambert(vec3(0,0,1)));
     // list[1] = new sphere(vec3(R,0,-3), R, new lambert(vec3(1,0,0)));
     // hitable *world = new hitable_list(list, 2);
 
-    hitable *world = random_scene();
-    vec3 lookfrom(13,2,3);
-    vec3 lookat(0,0,0);
-    float dist_to_focus = 10.0;
+    //Scene B:
+    // hitable *world = random_scene();
+
+    vec3 lookfrom(0,1,3);
+    vec3 lookat(0,0.5,-1);
+    float dist_to_focus = (lookfrom - lookat).length();
     float aperture = 0.1;
     camera cam(lookfrom, lookat, vec3(0,1,0), 20, float(width)/float(height), aperture, dist_to_focus);
     for(int y=height-1; y>=0; y--) {
