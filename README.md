@@ -15,7 +15,7 @@ It is phenomenly writen and I highly suggest anyone interested in learning the b
 - Add a GUI for moving objects and the camera around
 - Add GPU support using CUDA
 
-### Results:
+### Progress:
 ![Normals](Images/Normals.png)
 ![Rasterize](Images/Rasterize.png)
 ![Artifact](Images/Artifact.png)
