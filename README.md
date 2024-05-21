@@ -12,15 +12,20 @@ It is phenomenly writen and I highly suggest anyone interested in learning the b
 
 ### Current Goals: 
 - Add support for objects other then spheres 😂
-- Add texture support
 - Add a GUI for moving objects and the camera around
 - Add GPU support using CUDA
 
 ### Results:
 ![Normals](Images/Normals.png)
 ![Rasterize](Images/Rasterize.png)
+![Artifact](Images/Artifacti.png)
 ![Scene A](Images/SceneA.png)
-![Depth of Feild](Images/DOF.png)
-![Scene B](Images/SceneB.png)
 ![Motion Blur](Images/MotionBlur.png)
+![Scene B](Images/SceneB.png)
+![Checker1](Images/SceneB_Checker.png)
+![Checker2](Images/Checker.png)
+![Image Textures](Images/Image_texture.png)
+![Noise 1](Images/noise1.png)
+![Noise 2](Images/noise2.png)
+
 
