@@ -18,7 +18,6 @@ It is phenomenly writen and I highly suggest anyone interested in learning the b
 ### Progress:
 ![Normals](Images/Normals.png)
 ![Rasterize](Images/Rasterize.png)
-![Artifact](Images/Artifact.png)
 ![Scene A](Images/SceneA.png)
 ![Motion Blur](Images/MotionBlur.png)
 ![Scene B](Images/SceneB.png)
